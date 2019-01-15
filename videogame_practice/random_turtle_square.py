@@ -1,20 +1,15 @@
 import turtle as turtle
 import random as rand
+import hex_color_generator as hex_gen
 
 turtle_god = turtle.Turtle()
+screen = turtle.Screen()
 
 turtle.color = ('orange', 'green')
 turtle.bgcolor('#4AFFED')
 
 main_loop = True
-random_number_for_iteration = ''
-hex_alphabet_in_python = ['1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
-
-def rand_hexadecimal_number_generator():
-   random_number_for_iteration = '#'
-   for i in range(0,7):
-        random_number_for_iteration = random_number_for_iteration + str(hex_alphabet_in_python[rand.randrange(0,15)])
-   
+global_color_variable = 0
 
 while main_loop == True:
     for i in range (0,4):
@@ -24,7 +19,6 @@ while main_loop == True:
     turtle_god.penup()
     turtle_god.goto(rand.randint(-200, 200), rand.randint(-200, 200))
     turtle_god.pendown()
-    random_number_for_iteration = ''
-    rand_hexadecimal_number_generator()
-    turtle.bgcolor(random_number_for_iteration)
+    global_color_variable = hex_gen.hex_generator()
+    turtle.bgcolor(global_color_variable)
   
