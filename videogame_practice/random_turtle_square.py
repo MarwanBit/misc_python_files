@@ -7,7 +7,7 @@ turtle_god = turtle.Turtle()
 screen = turtle.Screen()
 
 turtle.color = ('orange', 'green')
-turtle.bgcolor('#4AFFED')
+screen.bgcolor('#4AFFED')
 
 main_loop = True
 global_color_variable = 0
@@ -23,5 +23,5 @@ while main_loop == True:
     turtle_god.goto(rand.randint(-200, 200), rand.randint(-200, 200))
     turtle_god.pendown()
     global_color_variable = hex_gen.hex_generator()
-    turtle.bgcolor(global_color_variable)
+    screen.bgcolor(global_color_variable)
   
