@@ -10,4 +10,5 @@ def hex_generator():
 		random_hex_color_number_for_iteration += str(i)
 	return random_hex_color_number_for_iteration
 
-
+random_hex_number = hex_generator()
+print(random_hex_number)
