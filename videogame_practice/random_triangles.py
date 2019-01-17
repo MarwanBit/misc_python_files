@@ -24,7 +24,9 @@ while main_loop == True:
 	turtle.color(hex_gen_mod.hex_generator())
 	screen_color = hex_gen_mod.hex_generator()
 	screen.bgcolor(screen_color)
+
 	random_draw_triangle()
+	
 	turtle.penup()
 	turtle.goto(rand.randint(-249,249),rand.randint(-249,249))
 	turtle.tilt(rand.randint(0,359))
