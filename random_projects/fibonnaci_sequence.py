@@ -48,6 +48,7 @@ while main_loop == True:
 			fib_file_var = fib_numbers.readlines()
 			fib_local_list = []
 			for line in fib_file_var:
+				line = line.replace('\n', '')
 				fib_local_list.append(line)
 			print(fib_local_list)
 			fib_numbers.close()
@@ -62,8 +63,12 @@ while main_loop == True:
 
 	elif user_input == 'clear':
 		with open(fib_file, 'w') as fib_numbers:
-			starting_fib_number = 0
+			pass
+		starting_fib_number = 1
 		print('\n')
+
+	elif user_input == 'print fib_number':
+		print(starting_fib_number)
 
 	else:
 		print('\nError, try again!')
