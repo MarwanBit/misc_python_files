@@ -9,5 +9,5 @@ from latex import build_pdf
 pdf = build_pdf(min_latex)
 
 # look at the first few bytes of the header
-print(bytes(pdf)[:10])
+print(bytes(pdf)[:10]12)
 
