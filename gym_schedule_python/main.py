@@ -13,17 +13,18 @@ class GraphicalInterface(tk.Tk):
 		#Titles the root Window 
 		self.title("Bobby Maximus Training Program")
 
+		#Creates the frame which is then placed inside of the root window
+		self.fr_width = 400
+		self.fr_height = 400
+		self.frame = tk.Frame(self, width= self.fr_width, height= self.fr_height)
+		self.frame.pack()
+
+
 		#Creating the BackGround Image
 		self.bg_image = tk.PhotoImage('images/bobby_maximus.jpg')
+		self.bg_label = ttk.Label(self, image= self.bg_image)
 		self.image = self.bg_image
-		self.bg_label = ttk.Label(self, image= self.image)
 		self.bg_label.pack()
-
-		#Creates the frame which is then placed inside of the root window
-		#self.fr_width = 400
-		#self.fr_height = 400
-		#self.frame = tk.Frame(self, width= self.fr_width, height= self.fr_height)
-		#self.frame.pack()
 
 
 user_interface = GraphicalInterface()
