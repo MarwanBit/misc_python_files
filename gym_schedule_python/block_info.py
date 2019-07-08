@@ -140,5 +140,5 @@ class BlockInfo():
 
 			
 my_regiment = BlockInfo()
-my_regiment.describe_block('L')
+my_regiment.describe_block('2')
 			
