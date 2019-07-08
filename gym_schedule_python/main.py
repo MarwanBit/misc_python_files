@@ -14,8 +14,8 @@ class GraphicalInterface(tk.Tk):
 		self.title("Bobby Maximus Training Program")
 
 		#Creates the frame which is then placed inside of the root window
-		self.fr_width = 400
-		self.fr_height = 400
+		self.fr_width = 1200
+		self.fr_height = 1200
 		self.frame = tk.Frame(self, width= self.fr_width, height= self.fr_height)
 		self.frame.pack()
 
