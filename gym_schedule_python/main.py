@@ -15,7 +15,8 @@ class GraphicalInterface(tk.Tk):
 
 		#Creating the BackGround Image
 		self.bg_image = tk.PhotoImage('images/bobby_maximus.jpg')
-		self.bg_label = ttk.Label(self, image= self.bg_image)
+		self.image = self.bg_image
+		self.bg_label = ttk.Label(self, image= self.image)
 		self.bg_label.pack()
 
 		#Creates the frame which is then placed inside of the root window
